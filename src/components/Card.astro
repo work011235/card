@@ -5,10 +5,10 @@ interface Props {
     aboutMe: string;
     linkedin: string;
     github: string;
-    signal: string;
-    telegram: string;
-    twitterx: string;
-    cvLink: string
+//    signal: string;
+//    telegram: string;
+//    twitterx: string;
+//    cvLink: string
 }
 
 const {name, position, aboutMe, linkedin, github, signal, telegram, twitterx, cvLink } = Astro.props;
@@ -23,7 +23,7 @@ import profileImage from '/src/images/profile.webp';
             <Image 
                 src={profileImage} 
                 class='img-fluid'
-                alt="Carlos Jurado" 
+                alt="David Steen" 
                 loading="eager"
             />
         </div>
@@ -44,6 +44,7 @@ import profileImage from '/src/images/profile.webp';
                     </span>
                     <i class="bi bi-github"></i>
                 </a>
+<!--
                 <a href={signal} class="hover-text" target="_blank">
                     <span class="tooltip-text" id="fade">
                         Signal
@@ -62,6 +63,7 @@ import profileImage from '/src/images/profile.webp';
                     </span>
                     <i class="bi bi-twitter-x"></i>
                 </a>
+-->
                 <a href={cvLink} class="hover-text" target="_blank">
                     <span class="tooltip-text" id="fade">
                         Resume
